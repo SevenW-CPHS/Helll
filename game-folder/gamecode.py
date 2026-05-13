@@ -1,7 +1,7 @@
 app.background = fill='silver'
 
 import time
-
+time = time.perf_counter()
 #gradient('Orange', 'Red', start='top')
 #sound('cmu://1204766/46781422/Yakuza+0+OST+-+54+Fiercest+Warrior+ver+0.mp3') ROBOT BOSS 1
 #sound('cmu://1204766/46833344/Limbus+Company+-+Canto+V+Boss+1+Battle+Theme.mp3') MISSILE BOSS 2
