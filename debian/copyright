@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Helll
+Upstream-Contact: SevenW-CPHS <user@example.com>
+Source: https://github.com/SevenW-CPHS/Helll
+
+Files: *
+Copyright: 2026 SevenW-CPHS
+License: MIT

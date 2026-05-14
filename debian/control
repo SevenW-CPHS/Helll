@@ -1,0 +1,9 @@
+Package: gamecode-launcher
+Version: 1.0.0
+Architecture: all
+Maintainer: SevenW-CPHS <user@example.com>
+Description: Launch gamecode.py from the Helll project
+ This package provides a desktop application launcher for gamecode.py,
+ a Python-based game from the Helll project.
+Depends: python3
+Homepage: https://github.com/SevenW-CPHS/Helll

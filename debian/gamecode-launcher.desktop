@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gamecode
+Comment=Launch the Helll game
+Exec=gamecode-launcher
+Icon=application-x-python
+Terminal=false
+Categories=Game;Application;

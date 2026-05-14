@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p debian/gamecode-launcher/usr/bin
+	mkdir -p debian/gamecode-launcher/usr/share/applications
+	mkdir -p debian/gamecode-launcher/opt/gamecode
+	cp game-folder/gamecode.py debian/gamecode-launcher/opt/gamecode/
+	cp debian/gamecode-launcher-wrapper debian/gamecode-launcher/usr/bin/gamecode-launcher
+	chmod +x debian/gamecode-launcher/usr/bin/gamecode-launcher
+	cp debian/gamecode-launcher.desktop debian/gamecode-launcher/usr/share/applications/
