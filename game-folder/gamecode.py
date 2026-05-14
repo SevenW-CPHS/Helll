@@ -1,5 +1,3 @@
-app.background = fill='silver'
-
 import time
 time = time.perf_counter()
 #gradient('Orange', 'Red', start='top')
@@ -10,12 +8,12 @@ time = time.perf_counter()
 #sound('cmu://1204766/46984121/Shun+Akiyama+(秋山+駿)+-+Baka+Mitai+(馬鹿みたい)+Lyrics+(RomajiKanjiEng+Trans)+Yakuza+5+(龍が如く)+OST+(1).mp3')
 #sound('cmu://1204766/46985822/Yakuza_+Like+A+Dragon+-+Baka+Mitai+(I've+Been+a+Fool)+(English).mp3')
 #^WINNING SCREEN SONG
-app.stepsPerSecond = 60
-app.steps = 0
-app.stepHeight = 250
+stepsPerSecond = 60
+steps = 0
+stepHeight = 250
 
 Background = Group(
-    Image('cmu://1204766/46767736/hq720.Png', 0, 0, width=600, height=400),
+    Imamg('cmu://1204766/46767736/hq720.Png', 0, 0, width=600, height=400),
     Rect(0, 0, 400, 400, fill=gradient('grey', 'white', start='top'), opacity=40)
 )
 
