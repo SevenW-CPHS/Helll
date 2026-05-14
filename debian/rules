@@ -1,12 +1,17 @@
 #!/usr/bin/make -f
+
 %:
 	dh $@
 
-override_dh_auto_install:
-	mkdir -p debian/gamecode-launcher/usr/bin
-	mkdir -p debian/gamecode-launcher/usr/share/applications
-	mkdir -p debian/gamecode-launcher/opt/gamecode
-	cp game-folder/gamecode.py debian/gamecode-launcher/opt/gamecode/
-	cp debian/gamecode-launcher-wrapper debian/gamecode-launcher/usr/bin/gamecode-launcher
-	chmod +x debian/gamecode-launcher/usr/bin/gamecode-launcher
-	cp debian/gamecode-launcher.desktop debian/gamecode-launcher/usr/share/applications/
+override_dh_install:
+	mkdir -p debian/helll-game/usr/bin
+	mkdir -p debian/helll-game/usr/lib/helll-game
+	cp game-folder/gamecode.py debian/helll-game/usr/lib/helll-game/
+	cp game-folder/run_game.py debian/helll-game/usr/lib/helll-game/
+	cp -r game-folder/assets debian/helll-game/usr/lib/helll-game/ 2>/dev/null || true
+	echo '#!/usr/bin/env python3' > debian/helll-game/usr/bin/helll
+	echo 'import sys' >> debian/helll-game/usr/bin/helll
+	echo 'import os' >> debian/helll-game/usr/bin/helll
+	echo 'sys.path.insert(0, "/usr/lib/helll-game")' >> debian/helll-game/usr/bin/helll
+	echo 'import gamecode' >> debian/helll-game/usr/bin/helll
+	chmod +x debian/helll-game/usr/bin/helll
