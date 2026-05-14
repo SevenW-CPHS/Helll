@@ -1,0 +1,16 @@
+Source: helll-game
+Section: games
+Priority: optional
+Maintainer: SevenW-CPHS <sevenw.cphs@example.com>
+Build-Depends: debhelper (>= 10), python3
+Standards-Version: 4.5.0
+Homepage: https://github.com/SevenW-CPHS/Helll
+
+Package: helll-game
+Architecture: all
+Depends: python3 (>= 3.6), python3-cmu
+Description: Hell Game - An intense arcade-style platformer
+ A fast-paced platformer game featuring challenging obstacles,
+ falling debris, missile attacks, and epic boss battles.
+ The game progressively becomes more difficult as you survive
+ the rising lava and incoming hazards.

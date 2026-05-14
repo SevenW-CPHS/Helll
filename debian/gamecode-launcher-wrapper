@@ -1,0 +1,4 @@
+#!/bin/bash
+# Wrapper script to launch gamecode.py
+cd /opt/gamecode
+python3 gamecode.py

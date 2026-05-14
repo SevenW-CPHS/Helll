@@ -1,0 +1,7 @@
+helll-game (1.0.0-1) focal; urgency=medium
+
+  * Initial release
+  * Game featuring multiple boss encounters and increasing difficulty
+  * Supports left/right movement and jumping mechanics
+
+ -- SevenW-CPHS <sevenw.cphs@example.com>  Thu, 14 May 2026 00:00:00 +0000
